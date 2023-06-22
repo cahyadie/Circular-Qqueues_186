@@ -45,5 +45,11 @@ public:
 			return;
 		}
 		cout << "\nThe element delected from th queue 1s: "; << queue_array[FRONT] << "\n";
+		
+		//cek jika antrian hanya memiliki 1 antrian
+		if (FRONT == max - 1)
+			FRONT = 0;
+		else
+			FRONT = FRONT + 1;
 	}
 }; 
